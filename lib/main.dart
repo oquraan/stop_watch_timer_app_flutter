@@ -38,7 +38,7 @@ class _StopWatchState extends State<StopWatch> {
     t1 = Timer.periodic(Duration(seconds: 1), (timer) {
       setState(() {
         int newSecond = duration.inSeconds;
-        newSecond++;
+        newSecond++;/// incrementing the seconds
         duration = Duration(seconds: newSecond);
       });
     });
